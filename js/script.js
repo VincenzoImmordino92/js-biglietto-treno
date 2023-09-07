@@ -15,19 +15,28 @@ console.log(przTot);
 
 
 
-let przkmScontato20 = przTot * 0.8;
-console.log(przkmScontato20);
 
-let przkmScontato40 = przTot * 0.6;
-console.log(przkmScontato40);
 
 
 if(age < 18){
-przTot = (przTot - przkmScontato20)
-console.log(przTot - przkmScontato20);
+
+  let sconto20 = przTot * 0.2;
+
+  console.log(sconto20);
+
+  przTot = (przTot - sconto20);
+
+  console.log(przTot);
+
 }else if(age >= 65){
-przTot =(przTot - przkmScontato40)
-console.log(przTot - przkmScontato20);
+
+  let sconto40 = przTot * 0.4;
+  
+  console.log(sconto40);
+
+  przTot = (przTot - sconto40)
+
+  console.log(przTot);
 
 }
 
@@ -39,5 +48,5 @@ const message ='Il prezzo del biglietto è di ' + przTot + 'euro';
 
 console.log(message);
 
-document.getElementById('output').innerHTML = message
+document.getElementById('output').innerHTML = message;
 
